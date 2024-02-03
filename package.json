@@ -1,5 +1,6 @@
 {
   "name": "pokedex",
+  "homepage": "https://andriyvegera.github.io/Pokemon/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,7 +30,9 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "preview": "react-scripts preview"
+    "preview": "react-scripts preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
